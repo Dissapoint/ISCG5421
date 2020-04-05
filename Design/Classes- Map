@@ -1,0 +1,7 @@
+Classes Layout:
+  #layout should be designed and uncollideable
+  pass
+  
+Classes camera:
+  #camera should follow the player
+  pass
