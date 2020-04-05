@@ -1,7 +1,8 @@
 Import classes-entity
 
-#class-entity.Jumping
 #class-entity.Walking
 #class-entity.Health
 #class-entity.Attack
-#class-entity.Collison
+  #class-entity.Collison
+  #attacks by colliding with Module-Player
+#class-entity.Collison 
