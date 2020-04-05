@@ -1,1 +1,10 @@
 Import classes-entity
+
+#class-entity.Jumping
+  #control with space bar
+#class-entity.Walking
+  #control with A button(for left) and D button(for right)
+#class-entity.Health
+#class-entity.Attack
+  #control with left mouse click 
+#class-entity.Collison
