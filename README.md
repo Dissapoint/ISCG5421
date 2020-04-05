@@ -1,5 +1,5 @@
 # ISCG5421
-The game will be 2d metrovania-like game that the character will Have to get to a goal while defeating enemys
+The game i will be creating is a 2d metrovania-like game that the character will Have to get to a goal while defeating enemys
 
 # ENEMYS
 Enemys wont attack however if you collide with them you will stustain damage
@@ -14,4 +14,6 @@ the player can Jump with the space bar
 the player can 
 
 # Player 2
-Player 2 has all the aspects of the player and they ca
+Player 2 has all the aspects of the player and they can intract with the player
+
+
