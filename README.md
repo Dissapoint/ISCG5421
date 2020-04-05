@@ -7,4 +7,11 @@ They will move left as far as the can however if they collide with a wall they w
 They cannot jump
 
 # Player
-The player character can 
+The player character can Jump, attack, and move and not collide with the map or player 2
+the player can move to the left with the A button
+the player can move to the right with the D button
+the player can Jump with the space bar
+the player can 
+
+# Player 2
+Player 2 has all the aspects of the player and they ca
