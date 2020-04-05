@@ -1,0 +1,23 @@
+Class Jumping:
+  #Allows the character to change animation from running/idle animation to jumping animation
+  #inceases vertical positioning intill jumpheight has reached.
+  pass
+
+Class Walking:
+  #Allows the character to change the horizontal positioning while changing animation from the idle animation to the running animation
+  #quick gradual acceleration and decearration
+  pass
+  
+Class Health:
+  #Has a set number of times can be hit before dieing
+  #disappears if dies
+  pass
+  
+Class Attack:
+  #inflicts damage onto Touching entity
+  pass
+  
+Class Collision:
+  #Cant collide with map or other entity
+  #should be behind UI
+  pass
