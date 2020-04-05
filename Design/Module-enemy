@@ -1,0 +1,7 @@
+Import classes-entity
+
+#class-entity.Jumping
+#class-entity.Walking
+#class-entity.Health
+#class-entity.Attack
+#class-entity.Collison
