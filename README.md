@@ -11,9 +11,12 @@ The player character can Jump, attack, and move and not collide with the map or 
 the player can move to the left with the A button
 the player can move to the right with the D button
 the player can Jump with the space bar
-the player can 
+the player can attack wi
 
 # Player 2
-Player 2 has all the aspects of the player and they can intract with the player
+Player 2 has all the aspects of the player and they can intract with the player. There sprite will be a shadow version of the original sprite
+
+# Class diagram
+![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/ClassDiagram.png "Class diagrams ")
 
 
