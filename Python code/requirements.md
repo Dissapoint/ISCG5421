@@ -1,0 +1,5 @@
+Requirements needed for the game to function
+-pyxel
+-time
+-threading
+-datetime
