@@ -14,6 +14,6 @@ the player can move to the bottom with the S button
 Player 2 has all the aspects of the player and they can intract with the player. There sprite will be a shadow version of the original sprite
 
 # Class diagram
-![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/ClassDiagram.png "Class diagrams ")
+![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/Untitled Diagram.png "Class diagrams ")
 
 
