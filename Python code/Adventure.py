@@ -1,6 +1,6 @@
 import pyxel
 import Map
-
+import Logging
 
 class App:
     """Sets the starting variables"""
@@ -153,12 +153,20 @@ class App:
             Map.World.MapLayoutN2_3(self)
         else:
             Map.World.MapLayoutSecret(self)
-
-        if self.loading:
-            pyxel.text(0, 0, "yess", 0)
+            logging.info("Out of Map")
 
         '''checks if the colour has changed for collision'''
         self.Colour1 = pyxel.pget(f'{self.x - 1}', f'{self.y - 1}')  # checks the top left colour
         self.Colour2 = pyxel.pget(f'{self.x + 4}', f'{self.y - 1}')  # checks the top right colour
         self.Colour3 = pyxel.pget(f'{self.x - 1}', f'{self.y + 4}')  # checks the bottom left colour
         self.Colour4 = pyxel.pget(f'{self.x + 4}', f'{self.y + 4}')  # checks the bottom right colour
+        
+        '''Error with collision'''
+        if self.Colour2 == 10 and self.Colour3 == 10:
+            logging.warning("Problem")
+        if self.Colour1 == 10 and self.Colour4 == 10:
+            logging.error("Problem")
+        if self.Colour2 == 5 and self.Colour3 == 5:
+            logging.debug("Problem")
+        if self.Colour1 == 10 and self.Colour4 == 10:
+            logging.critical("Problem")
