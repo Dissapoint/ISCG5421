@@ -45,6 +45,26 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
+# 8.04.2020
+
+### All Day
+
+*I started getting some doodles on my notepad of designs for creatures and stuff i would like to be in this world*
+
+# 9.04.2020
+
+### 8pm onwards
+
+*i tried to implement the character and failed so i created easy movement and has a black dot as the substute for the character intill i can load the sprite in*
+
+
+# 14.04 2020 
+
+*ive spent the past couple days studying python in general in hopes of solving this but i still cannot figure it out, i have heaps of problems that i dont know how to solve like loading sprites, collison and screen movement*
+
+*maybe i went to big*
+
+
 # 8.05.2020
 
 ### 4:00PM - 8:00pm
@@ -158,6 +178,12 @@ Actual time: 3 hours
 
 *I spent today working on The main menu and making it look presentable*
 
+# 24/05/2020
+
+### 9:00pm to 11:00pm
+
+*I included the date time feature to the main menu, im so tired from work*
+
 
 # 26/05/2020
 
@@ -172,6 +198,14 @@ Actual time: 7 hours
 
 *However i am having a problems with this and it isnt switching over and i still do not know why*
 
+# 27/05/2020
+
+### 30mins
+
+
+*I only spent 30minutes on it because i want to work on it a little bit at least everyday*
+
+*i spent today trying to tackle that stupid problem with it not changing screens, im stumped on how to fix it* 
 
 # 28/05/2020
 
@@ -186,6 +220,9 @@ Actual time: 5 hours
 
 *i have no idea how i let this slip past me for so long*
 
+# 30/05/2020
+
+*i spent today cleaning up the journal*
 
 # 1/06/2020
 
@@ -203,7 +240,7 @@ Actual time: 7 hours
 Estimated time:2 hours
 Actual time: 2.4 hours
 
-*I Spent today working on finishing the side game "pong" to include stuff like date and time and threading which i cant see how to put into my normal game*
+*I Spent today working on finishing the side game "pong" to include stuff like threading which i cant see how to put into my normal game*
 
 
 
@@ -220,6 +257,9 @@ Actual time: 2.4 hours
 
 *I spent today finishing up on some of the extra stuff like testing and comments that are required*
 
+# 6/06/2020 
+
+*i pushed everything that needed updating to the github, if everything goes well i should be done*
 
 # 30/06/2020
 
