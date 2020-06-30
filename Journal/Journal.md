@@ -32,7 +32,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
-#7.04.2020
+# 7.04.2020
 
 ### 5:00PM - 9:00PM
 
@@ -40,7 +40,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
-#8.05.2020
+# 8.05.2020
 
 ### 4:00PM - 8:00pm
 
@@ -48,7 +48,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
-#9.05.2020
+# 9.05.2020
 
 ### 6:30PM - 10:00PM
 
@@ -57,7 +57,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
-#10.05.2020 
+# 10.05.2020 
 
 ### 9:00AM - 11:30PM
 
@@ -65,7 +65,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 
 
 
-#11.05.2020
+# 11.05.2020
 
 ###12:30PM - 5:00PM
 
@@ -73,7 +73,7 @@ I estimate this will take around 10mins to complete the Ui because the health is
 * today i started building snow and water textures so i can place the character onto*
 
 
-#12.05.2020
+# 12.05.2020
 
 ###2:10PM - 4:40PM
 
