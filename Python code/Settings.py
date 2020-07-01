@@ -1,7 +1,15 @@
 import logging
 import Map
 import pyxel
+'''
+This module is for selecting the map,movement and other small details  
+
+'''
+
+
 class gears:
+    
+    '''Selects the map for use later'''
     def map_select(self):
         if self.MapXY == [0,1]:
             Map.World.MapLayout0_1(self)
@@ -29,9 +37,13 @@ class gears:
             Map.World.MapLayoutN2_N1(self)
         elif self.MapXY ==  [-2,3]:
             Map.World.MapLayoutN2_3(self)
-        else:
+        else:# for a error
             Map.World.MapLayoutSecret(self)
             logging.info("Out of Map")
+            map_problem_exception("Out of map")
+
+            
+     '''Controls the movement of the character'''
     def movement(self):
         if self.x <= -1:  # going left
             self.x = 249
@@ -77,19 +89,21 @@ class gears:
             self.y = 139
             self.MapXY[1] += 1
 
-        '''Castle entrance'''
+       '''Castle entrance'''
         if self.MapXY == [0,0]: # yellow castle gate
             if self.y <= 72 and self.x >= 108:
                 if self.y >= 65 and self.x <= 141:
                     self.y = 140
                     self.MapXY[1] += 1
-
+        else:
+            Yellow_castle_exception()
         if self.MapXY == [-2,2]:# blue castle gate
             if self.y <= 72 and self.x >= 108:
                 if self.y >= 65 and self.x <= 141:
                     self.y = 140
                     self.MapXY[1] += 1
-
+        else:
+            blue_castle_exception()
         '''collison with the wall'''
         if self.loading == False:
             if self.Colour[0] == 10 and self.Colour[1] == 10:  # up
@@ -121,7 +135,22 @@ class gears:
                 if pyxel.btn(pyxel.KEY_A):
                     self.x -= 2
         else:
-            pass
+            wall_exception
+
+
+'''exceptions'''
+
+class wall_exception(Exception):
+    pass
+
+class map_problem_exception(Exception):
+    pass
+
+class Yellow_castle_exception(Exception):
+    pass
+
+class blue_castle_exception(Exception):
+    pass
 
 '''Unit tests'''
 
