@@ -6,8 +6,13 @@ import socket
 '''
 This Module is used for drawing the adventure game and runs the game 
 
-
 '''
+
+
+'''finds request and prints the api'''
+class API_find:
+    response = requests.get('https://api.github.com')  # saves the api
+    print(response.headers) # prints the api
 
 
 class App:
@@ -60,16 +65,3 @@ class App:
     # pyxel.rect(f'{self.x + 4}', f'{self.y - 1}', 1, 1, 11)
     # pyxel.rect(f'{self.x - 1}', f'{self.y + 4}',1,1,1)
     # pyxel.rect(f'{self.x + 4}', f'{self.y +4}', 1, 1, 15
-
-
-'''multiplayer'''
-
-
-def request():
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', 5678))  # Bind on port 5678server_socket.listen()
-    client_socket.connect(('localhost', 5678))  # Connect to our serverclient_socket.send(b’ping?\n’)  # Send a message in bytes
-    client_socket.send('ping?\n')
-    client_addr = server_socket.accept()
-    print(client_addr)
