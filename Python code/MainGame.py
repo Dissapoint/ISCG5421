@@ -56,6 +56,7 @@ class Mainmenu():  # the class
                 pyxel.rectb(85, 55, 50, 15, 0)
         elif self.Game == {2}:  # starts the adventure game
             Adventure.App()
+            Adventure.API_find()
         elif self.Game == {1}:  # starts pong
             Pong.Start()
         else:  # error occured
