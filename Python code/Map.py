@@ -1,6 +1,10 @@
 import pyxel
-class World:
 
+'''This module creates the maps'''
+
+
+class World:
+    '''the design for the maps'''
     def MapLayout0_0(self):
         pyxel.rect(0, 0, 10, 130, 10)#right side
         pyxel.rect(0, 0, 70, 10, 10)#top left side
