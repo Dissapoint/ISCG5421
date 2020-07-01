@@ -3,6 +3,11 @@ The game i will be creating is a replicate of the 1979 game "Adventure" with a s
 
 
 https://youtu.be/H-vM7a-svTA
+
+
+
+
+
 ![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/Concept%20art/Needed%20Picture.PNG "Main Screen")
 
 # Player
@@ -14,10 +19,8 @@ the player can move to the up with the W button
 
 the player can move to the bottom with the S button
 
-# Player 2
-Player 2 has all the aspects of the player and they can intract with the player. There sprite will be a shadow version of the original sprite
 
 # Class diagram
-![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/ClassDiagram.png "Class diagrams ")
+![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/ClassDiagram2.png "Class diagrams ")
 
 
