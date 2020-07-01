@@ -1,19 +1,17 @@
 import pyxel
 import logging
 import Setting
-import socket
+import requests
 
 '''
 This Module is used for drawing the adventure game and runs the game 
 
 '''
 
-
 '''finds request and prints the api'''
 class API_find:
     response = requests.get('https://api.github.com')  # saves the api
     print(response.headers) # prints the api
-
 
 class App:
     """Sets the starting variables"""
@@ -27,11 +25,10 @@ class App:
         # Colour sensors
         self.Colour = [0, 0, 0, 0]
         pyxel.run(self.update, self.draw)
+         # print api
 
-        """Updates the Screen"""
-
+    """Updates the Screen"""
     def update(self):
-
         Setting.gears.movement(self)  # movement
 
     """this draws onto the screen"""
@@ -65,3 +62,4 @@ class App:
     # pyxel.rect(f'{self.x + 4}', f'{self.y - 1}', 1, 1, 11)
     # pyxel.rect(f'{self.x - 1}', f'{self.y + 4}',1,1,1)
     # pyxel.rect(f'{self.x + 4}', f'{self.y +4}', 1, 1, 15
+
