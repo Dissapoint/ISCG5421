@@ -3,6 +3,7 @@ The game i will be creating is a replicate of the 1979 game "Adventure" with a s
 
 
 https://youtu.be/H-vM7a-svTA
+![alt text](https://github.com/Dissapoint/ISCG5421/blob/master/Design/Concept%20art/Needed%20Picture.PNG "Main Screen")
 
 # Player
 the player can move to the left with the A button
