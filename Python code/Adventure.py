@@ -1,6 +1,13 @@
 import pyxel
 import logging
 import Setting
+import socket
+
+'''
+This Module is used for drawing the adventure game and runs the game 
+
+
+'''
 
 
 class App:
@@ -16,15 +23,11 @@ class App:
         self.Colour = [0, 0, 0, 0]
         pyxel.run(self.update, self.draw)
 
-
         """Updates the Screen"""
 
     def update(self):
 
-        Setting.gears.movement(self)
-
-
-        '''collision checker -  improve if you have time future daniel'''
+        Setting.gears.movement(self)  # movement
 
     """this draws onto the screen"""
 
@@ -32,10 +35,9 @@ class App:
         pyxel.cls(13)  # background screen
         pyxel.rect(self.x, self.y, 4, 4, 0)  # Player1
 
-
         '''This Selects what map is going to be used based on your location'''
         Setting.gears.map_select(self)
-        
+
         '''checks if the colour has changed for collision'''
         self.Colour[0] = pyxel.pget(f'{self.x - 1}', f'{self.y - 1}')  # checks the top left colour
         self.Colour[1] = pyxel.pget(f'{self.x + 4}', f'{self.y - 1}')  # checks the top right colour
@@ -52,7 +54,7 @@ class App:
             logging.critical("Problem")
 
     '''Developer checking test'''
-    #pyxel.text(0, 0, f'({self.MapXY})', 7)
+    # pyxel.text(0, 0, f'({self.MapXY})', 7)
     # pyxel.text(0, 20, f'({self.x}, {self.y})', 7)
     # pyxel.rect(f'{self.x - 1}', f'{self.y - 1}',1,1,7)
     # pyxel.rect(f'{self.x + 4}', f'{self.y - 1}', 1, 1, 11)
@@ -60,4 +62,14 @@ class App:
     # pyxel.rect(f'{self.x + 4}', f'{self.y +4}', 1, 1, 15
 
 
+'''multiplayer'''
 
+
+def request():
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.bind(('localhost', 5678))  # Bind on port 5678server_socket.listen()
+    client_socket.connect(('localhost', 5678))  # Connect to our serverclient_socket.send(b’ping?\n’)  # Send a message in bytes
+    client_socket.send('ping?\n')
+    client_addr = server_socket.accept()
+    print(client_addr)
