@@ -2,20 +2,24 @@ import pyxel
 import threading
 import time
 
+
+'''
+This Module plays the side game pong 
+'''
+
 """Threading"""
+
 class myThread(threading.Thread):
     def run(self):
         print("Starting Threading")
         time.sleep(5)
         print("Done")
 
+#converts the class
+P2Thread1 = myThread() 
 
-P2Thread1 = myThread()
-P2Thread2 = myThread()
-P2Thread3 = myThread()
 
 class Start:
-    thread1 = myThread()
     """Sets the starting variables"""
     def __init__(self):  # variables we will use in this pong
         self.P1Y = 90  # Player 1 Y position
@@ -33,17 +37,17 @@ class Start:
         pyxel.run(self.update, self.draw)  # runs the application
 
     def update(self):  # updates the screen
-        if pyxel.btn(pyxel.KEY_W):
+        if pyxel.btn(pyxel.KEY_W):  # movement up
             if self.P1Y <= 20:
                 pass
             else:
                 self.P1Y -= 2
-        if pyxel.btn(pyxel.KEY_S):
+        if pyxel.btn(pyxel.KEY_S):  # movement down
             if self.P1Y >= 100:
                 pass
             else:
                 self.P1Y += 2
-        if self.GameStart == True:
+        if self.GameStart == True:  # ball direction
             if self.DirectionX == 1:
                 self.BallX -= 1
             if self.DirectionX == 2:
@@ -76,26 +80,29 @@ class Start:
                     self.P2Y -= 1
             else:
                 pass
+        else:
+            start_exception()
 
-
-    def draw(self):
+    '''draws the pong game'''
+    def draw(self): 
         pyxel.cls(7)
         pyxel.rect(f'{self.BallX}', f'{self.BallY}', 4, 4, 10)  # Draws The ball
         pyxel.rect(20, f'{self.P1Y}', 10, 40, 0)  # draws player 1
         pyxel.rect(220, f'{self.P2Y}', 10, 40, 0)  # draws player 2
         self.Colour = pyxel.pget(f'{self.BallX} ', f'{self.BallY}')
         pyxel.rect(0, 0, 250, 20, 0)  # draws player 2
-        pyxel.text(120, 10, f'{self.P1Score}', 7)
-        pyxel.text(140, 10, f'{self.P2Score}', 7)
-
-        if self.BallX <= 10:
+        pyxel.text(120, 10, f'{self.P2Score}', 7)
+        pyxel.text(140, 10, f'{self.P1Score}', 7)
+        
+        
+        
+        if self.BallX <= 10: # ball loses
             self.P1Score += 1
             self.DirectionX = 2
             self.BallX = 125
             self.BallY = 90
             if self.P1Score == 1:
                 P2Thread1.start()
-            if self.P1Score == 2:
-                P2Thread2.start()
-            if self.P1Score == 3:
-                P2Thread3.start()
+
+class start_exception(Exception):
+    pass
